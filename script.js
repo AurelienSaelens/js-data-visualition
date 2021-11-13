@@ -12,42 +12,6 @@ canvas1.style.height = "50px";
 let body = document.getElementById("bodyContent");
 body.insertBefore(canvas1, body.childNodes[0]);
 
-/*window.onload = getData();
-async function getData() {
-    const request = "https://canvasjs.com/services/data/datapoints.php";
-    console.log(request);
-    setTimeout(getData, 1000);
-
-let response = await fetch(request);
-let graphData = await response.json();
-
-let yData = [];
-let dataSets3 = [];
-let xData = [];
-    
-    for (let i = 0; i < graphData.length; i ++) {
-        xData.push(graphData[i][0]);
-        yData.push(graphData[i][1]);
-    }
-
-    var json = {
-        label: ['Current Statistics'],
-        data: [], //numbers
-        backgroundColor: rgb(),
-        fill: false,
-    }
-    dataSets3.push(json);
-    let ctx3 = document.getElementById("myChart").getContext('2d');
-    let myChart3 = new Chart(ctx3, {
-        type: 'line',
-        data: {
-            labels: xData,
-            datasets: dataSets3,
-        },
-        options: {}
-    });
-  }*/
-
 let xhr = new XMLHttpRequest();
 
 const ctx3 = document.getElementById("myChart").getContext("2d");
